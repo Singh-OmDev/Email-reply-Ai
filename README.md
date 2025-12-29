@@ -1,9 +1,11 @@
 # 📧 AutoReply AI
 
 **AutoReply AI** is a smart email assistant that helps you write perfect, professional replies in seconds using the power of **Llama 3 AI**.
+ live demo    https://email-reply-ai.vercel.app/#how-it-works
 
-![AutoReply AI Screenshot](https://via.placeholder.com/800x400.png?text=AutoReply+AI+Dashboard+Preview) 
-*(Replace this link with an actual screenshot of your dashboard later!)*
+
+<img width="1864" height="860" alt="image" src="https://github.com/user-attachments/assets/ea0c495d-588f-4298-becd-9d7d9b807e02" />
+
 
 ## 🚀 Features
 
