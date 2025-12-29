@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@theme {
+  --color-primary: #000000;
+  --color-primary-hover: #171717;
+  /* Neutral 900 */
+  --color-accent: #6366f1;
+  /* Indigo 500 */
+
+  --color-bg-main: #ffffff;
+  --color-bg-subtle: #f9fafb;
+  /* Gray 50 */
+  --color-border: #e5e7eb;
+  /* Gray 200 */
+
+  --color-text-main: #0f172a;
+  /* Slate 900 */
+  --color-text-muted: #64748b;
+  /* Slate 500 */
+
+  --font-sans: "Inter", sans-serif;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom Utilities for Clean UI */
+@layer utilities {
+  .soft-card {
+    @apply bg-white border border-slate-200 shadow-sm rounded-xl transition-all duration-200;
+  }
+
+  .soft-card:hover {
+    @apply shadow-md border-slate-300;
+  }
+
+  .btn-primary {
+    @apply bg-slate-900 text-white font-medium px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors shadow-sm;
+  }
+
+  .btn-outline {
+    @apply bg-white text-slate-700 font-medium px-4 py-2 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors;
+  }
+
+  .input-clean {
+    @apply block w-full rounded-lg border-slate-200 shadow-sm focus:border-slate-400 focus:ring-slate-400 sm:text-sm p-3 border bg-white text-slate-900 placeholder:text-slate-400 transition-colors;
+  }
+}
+
+body {
+  @apply bg-white text-slate-900 font-sans antialiased selection:bg-slate-100;
+}
